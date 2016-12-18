@@ -1,0 +1,11 @@
+      ADD   R1,R0,R0     ; initialize R1 to zero
+      LI    R2,4         ; save the increment value into R2
+      LI    R3,800       ; save the index at which the loop ends
+loop: L   R4,0(R1)     ; load the first operand into F0
+      L   R5,800(R1)   ; load the second operand into F1
+      ADD   R6,R4,R5     ; R6 = R4 + R5
+      S   R6,1600(R1)  ; store the result
+      ADD   R1,R1,R2     ; R1 = R1 + 8
+      BNEQ  R1,R3,loop   ; termination condition
+      EOF   R0, R0                      ; use label as the offset value
+      EOF   R0, R0

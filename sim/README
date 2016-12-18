@@ -1,0 +1,47 @@
+Simple Pipeline
+===============
+
+Steps to execute the Simple Pipeline Simulator:
+
+1) Important point, Add two EOF instructions at the end of input program file.
+   EOF instructions are used to identify end of program. Program will run into
+   infinite loop if you dont add the EOF instructions at the end of program.
+   One can find sample example in samples directory.
+
+2) How to compile the project?
+
+   1) goto ~/sim/src directory.
+   
+   2) execute the command "make all" in the current directory. This command 
+   will compile the project.
+
+3) Simulator expects memory dump to be in big endien mode, one can find WriteMemory
+   java program in tools directory to generate memory dump in big endien mode.
+
+   Simulator is using abstract window toolkit to display memory & registers contents, 
+   make sure DISPLAY variable is set or you are on local linux machine.
+
+
+4) How to run the project?
+   simulator expects four file names as input argument. Make sure all the input files 
+   are in the ~/sim/src/. directory.
+
+   To run the project execute following command:
+
+   ./sim_t.sh arch_param_file_name init_mem_file_name assembly_file_name output_file_name
+
+   (All the input files should be in ~/src/. directory)
+
+   Program generates lots of information on command prompt. At the end,output_file will be 
+   generated with the results. Output file contains (CPI,# of clock cycle, # of stalls,
+   # of instructions executed).
+   
+   Memory contents will be displayed in JFrame Window. Memory is implemented as array of Bytes.
+
+    
+5) How to exit from the simulator?
+
+  Once execution is finished result is displayed at console and written into output file.
+  To show the contents of Memory and registers in JFrame, i have suspended the main thread.
+  Once execution is finished, to exit from the application press "Ctrl + c". 
+

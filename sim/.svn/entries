@@ -1,0 +1,49 @@
+8
+
+dir
+27
+svn+ssh://sharks.cs.indiana.edu/u/achauhan/SVN/B649/2010-Spring/akodgire/A01/sim
+svn+ssh://sharks.cs.indiana.edu/u/achauhan/SVN/B649/2010-Spring/akodgire
+
+
+
+2010-03-07T20:46:04.722450Z
+13
+akodgire
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+9e313a93-e350-413d-92be-781760f5b8f8
+
+tools
+dir
+
+samples
+dir
+
+src
+dir
+
+README
+file
+
+
+
+
+2010-03-07T20:26:17.000000Z
+8cd4f43db340ee9ed0813f7c7893aa60
+2010-03-07T20:46:04.722450Z
+13
+akodgire
+

@@ -1,0 +1,29 @@
+Simple Pipeline
+===============
+
+Steps to execute the program:
+
+1) Important point, Add two EOF instructions at the end of input program file.
+   EOF instructions are used to identify end of program. Program will run into
+   infinite loop if you dont add the EOF instructions at the end of program.
+   One can find sample example in samplesPrograms directory.
+
+2) How to compile the project?
+   execute the command "make all" in the current directory. This command 
+   will compile the project.
+
+3) "make clean" is used to remove all .class files.
+
+4) How to run the program?
+   make sure all the input files are in the current directory.Program using
+   abstract window toolkit to display memory registers contents, make sure 
+   DISPLAY variable is set or you are on local machine.
+
+   To run the program execute following command:
+   ./sim_t arch_param_file init_mem_file assembly_file output_file
+
+   Program generates lots of debug information on command prompt. At the end,
+   output_file will be generated with the results.
+
+   
+

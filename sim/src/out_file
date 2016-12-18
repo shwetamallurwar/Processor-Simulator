@@ -1,0 +1,5 @@
+Simple Pipeline Result 
+Number of Clock Cycles ::3805
+Number of Instructions Executed ::1203
+Number of Stalls :: 2402
+Average CPI ::3.162926018287614
